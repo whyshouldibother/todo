@@ -6,6 +6,7 @@ Todo Application with django
 * [Tech Stack](#tech-stack)
 * [Setup Instructions](#setup-instructions)
 * [API Endpionts](#api-endpoints)
+    * [Testing API Endpints](#testing-api-endpoints)
 ## Tech Stack
 
 Language: Python </br>

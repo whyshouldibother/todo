@@ -14,6 +14,7 @@ class TodoPagination(PageNumberPagination):
     page_size_query_param = 'page_size'
 
 #get /api/todos
+# handles list and create operations depending on the httprequest method
 class TodoListCreate(generics.ListCreateAPIView):
     queryset = Todo.objects.all()
     serializer_class = TodoSerializer
@@ -29,6 +30,7 @@ class TodoListCreate(generics.ListCreateAPIView):
 
 
 #get /api/todos/<id>/ 
+# handles retrive, update and delete depending on the httprequest method
 #id passed as pk
 class TodoOperations(generics.RetrieveUpdateDestroyAPIView):
     queryset = Todo.objects.all()

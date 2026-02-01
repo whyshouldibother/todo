@@ -4,9 +4,9 @@ Todo Application with django
 
 ## Tech Stack
 
-Language: Python
-Framework: Django / Django Rest Framework (DRF)
-Database: SQlite
+Language: Python </br>
+Framework: Django / Django Rest Framework (DRF) </br>
+Database: SQlite </br>
 
 ## Setup Instructions
 1) Clone the repository

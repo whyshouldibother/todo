@@ -2,6 +2,10 @@
 
 Todo Application with django
 
+## Table of Contents
+* [Tech Stack](#tech-stack)
+* [Setup Instructions](#setup-instructions)
+* [API Endpionts](#api-endpoints)
 ## Tech Stack
 
 Language: Python </br>

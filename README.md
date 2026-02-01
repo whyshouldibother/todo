@@ -5,6 +5,7 @@ Todo Application with django
 ## Table of Contents
 * [Tech Stack](#tech-stack)
 * [Setup Instructions](#setup-instructions)
+* [Running The Server](#running-the-server)
 * [API Endpionts](#api-endpoints)
     * [Testing API Endpints](#testing-api-endpoints)
 ## Tech Stack
@@ -28,7 +29,7 @@ source .venv/bin/activate
 ```
 pip install -r requirements.txt
 ```
-4) Run the server
+## Running the server
 ```
 python server/manage.py runserver
 ```

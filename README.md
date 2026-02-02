@@ -76,13 +76,13 @@ Server runs at 127.0.0.1:8000 or localhost:8000
 - Retrive One
 
   ```
-  curl -X GET http://localhost:8000/api/todos/{id}
+  curl -X GET http://localhost:8000/api/todos/{id}/
   ```
 
 - Update
 
   ```
-  curl -X PUT http://localhost:8000/api/todos/ \
+  curl -X PUT http://localhost:8000/api/todos/{id}/ \
   -H "Content-Type: application/json" \
   -d '{"title":{"New Title"}, "description":"{New Description}"}'
   ```
@@ -90,7 +90,7 @@ Server runs at 127.0.0.1:8000 or localhost:8000
   or
 
   ```
-  curl -X PATCH http://localhost:8000/api/todos/ \
+  curl -X PATCH http://localhost:8000/api/todos/{id}/ \
   -H "Content-Type: application/json" \
   -d '{"title":{"New Title"}, "description":"{New Description}"}'
   ```
@@ -98,7 +98,7 @@ Server runs at 127.0.0.1:8000 or localhost:8000
 - Delete
 
   ```
-  curl -X GET http://localhost:8000/api/todos/{id}
+  curl -X GET http://localhost:8000/api/todos/{id}/
   ```
 
 ## Accessing the Django Admin Panel

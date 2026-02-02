@@ -104,24 +104,24 @@ python server/manage.py migrate
 </li>
 <li>
 <p>Retrive One</p>
-<pre><code>curl -X GET http://localhost:8000/api/todos/{id}
+<pre><code>curl -X GET http://localhost:8000/api/todos/{id}/
 </code></pre>
 </li>
 <li>
 <p>Update</p>
-<pre><code>curl -X PUT http://localhost:8000/api/todos/ \
+<pre><code>curl -X PUT http://localhost:8000/api/todos/{id}/ \
 -H &quot;Content-Type: application/json&quot; \
 -d '{&quot;title&quot;:{&quot;New Title&quot;}, &quot;description&quot;:&quot;{New Description}&quot;}'
 </code></pre>
 <p>or</p>
-<pre><code>curl -X PATCH http://localhost:8000/api/todos/ \
+<pre><code>curl -X PATCH http://localhost:8000/api/todos/{id}/ \
 -H &quot;Content-Type: application/json&quot; \
 -d '{&quot;title&quot;:{&quot;New Title&quot;}, &quot;description&quot;:&quot;{New Description}&quot;}'
 </code></pre>
 </li>
 <li>
 <p>Delete</p>
-<pre><code>curl -X GET http://localhost:8000/api/todos/{id}
+<pre><code>curl -X GET http://localhost:8000/api/todos/{id}/
 </code></pre>
 </li>
 </ul>

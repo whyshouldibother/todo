@@ -2,10 +2,10 @@ import Retrive from "@lib/retrive/retriveOne";
 import update from "@lib/update/update";
 import remove from "@lib/delete/delete";
 import { redirect } from "next/navigation";
-const todo = async (id) => {
+const todo = async (id:number) => {
   return await Retrive(id);
 };
-async function handleUpdate(formData) {
+async function handleUpdate(formData:FormData) {
   "use server";
   const id = formData.get("id");
   const title = formData.get("title");
@@ -21,12 +21,12 @@ async function handleUpdate(formData) {
   });
   redirect(`/${id}`);
 }
-async function handleDelete(formData) {
+async function handleDelete(formData:FormData) {
   "use server";
   await remove(formData.get("id"));
   redirect("/");
 }
-export default async function Page({ params }) {
+export default async function Page({ params }:{params: {id:number}}) {
   const { id } = await params;
   const data = await todo(id);
   return (
@@ -71,7 +71,7 @@ export default async function Page({ params }) {
             is_completed
           </label>
         </div>
-        <div class="flex gap-4 mt-4">
+        <div className="flex gap-4 mt-4">
           <button
             formAction={handleUpdate}
             className="flex-1 bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:shadow-lg cursor-pointer transition"

@@ -13,16 +13,22 @@ Todo Application with Django
 
 ## Tech Stack
 
-Language: Python </br>
-Framework: Django / Django Rest Framework (DRF) </br>
-Database: SQlite </br>
+* Backend
+  * Language: Python</br>
+  * Framework: Django / Django Rest Framework (DRF) </br>
+* Frontend
+  * Language: TypeScript/JavaScript </br>
+  * Framework: Next.js
+  * Styling: Tailwind
+* Database: SQlite </br>
 
-## Setup Instructions
+## Backend
+### Setup Instructions
 
 1. Clone the repository
    ```
    git clone https://github.com/whyshouldibother/todo.git
-   cd todo
+   cd todo/server
    ```
 2. Create Virtual Envirnoment (Recommended)
    ```
@@ -35,19 +41,16 @@ Database: SQlite </br>
    ```
 4. Applying Migrations
    ```
-   python server/manage.py makemigrations
-   python server/manage.py migrate
+   python manage.py makemigrations
+   python manage.py migrate
    ```
 
-## Running the server
-
-```
-python server/manage.py runserver
-```
+### Running the server
+  ``` python manage.py runserver ```
 
 Server runs at 127.0.0.1:8000 or localhost:8000
 
-## API Endpoints
+### API Endpoints
 
 | Operation   | Method    | Endpoint        | Description       |
 | ----------- | --------- | --------------- | ----------------- |
@@ -57,7 +60,7 @@ Server runs at 127.0.0.1:8000 or localhost:8000
 | Update      | PUT/PATCH | /api/todos/{id} | Create a new todo |
 | Delete      | DELETE    | /api/todos/<id> | Delete a todo     |
 
-### Testing API Endpoints
+#### Testing API Endpoints
 
 - Create
 
@@ -101,13 +104,35 @@ Server runs at 127.0.0.1:8000 or localhost:8000
   curl -X GET http://localhost:8000/api/todos/{id}/
   ```
 
-## Accessing the Django Admin Panel
+### Accessing the Django Admin Panel
 
 - Create Admin User
   ```
-  python server/manage.py createsuperuser
+  python manage.py createsuperuser
   ```
 - Restart The Server
 - Access Django Admin
   `http://localhost:8000/admin`
   Login in with the superuser credentials
+
+## Frontend
+
+### Setup Instructions
+  1) Navigate to the frontend folder
+    ```
+    cd client
+    ```
+  2) Install dependencies (for npm)
+    ```
+    npm install
+    ```
+  3) Run in dev mode (for testing)
+    ```
+    npm run dev
+    ```
+  4) Build Project and Run Project
+    ```
+    npm run build
+    npm start
+    ```
+    Server runs at http://localhost:3000 or http://127.0.0.1:3000

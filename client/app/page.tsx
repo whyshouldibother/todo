@@ -4,17 +4,24 @@ import Create from "@lib/create/create.js";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { useState, useEffect } from "react";
-async function handleCreate(formData) {
+interface Todo{
+  id: number,
+  title: string,
+  description: string,
+  is_completed: boolean,
+  created_at:string,
+}
+async function handleCreate(formData:FormData) {
   const title = formData.get("title");
   const description = formData.get("description");
   await Create({ title: title, description: description });
   redirect("/");
 }
 export default function App() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<Todo[]>([]);
   const [next, setNext] = useState(null);
   const [prev, setPrev] = useState(null);
-  async function fetchTodos(page) {
+  async function fetchTodos(page:string) {
     const todo = await RetriveAll(page);
     await setData(todo.results);
     await setPrev(todo.previous);

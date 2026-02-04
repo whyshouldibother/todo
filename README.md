@@ -1,6 +1,9 @@
 # Todo
 
-Todo Application with Django
+Todo Application with Django and Next.js
+
+![Demo 0](demo0.png)
+![Demo 1](demo1.png)
 
 ## Table of Contents
 
@@ -17,13 +20,13 @@ Todo Application with Django
 ## Tech Stack
 
 * Backend
-  * Language: Python</br>
-  * Framework: Django / Django Rest Framework (DRF) </br>
+  * Language: Python
+  * Framework: Django / Django Rest Framework (DRF)
 * Frontend
-  * Language: TypeScript/JavaScript </br>
+  * Language: TypeScript/JavaScript
   * Framework: Next.js
   * Styling: Tailwind
-* Database: SQlite </br>
+* Database: SQlite
 
 ## Backend
 ### Backend Setup Instructions

@@ -5,11 +5,14 @@ Todo Application with Django
 ## Table of Contents
 
 - [Tech Stack](#tech-stack)
-- [Setup Instructions](#setup-instructions)
-- [Running The Server](#running-the-server)
-- [API Endpionts](#api-endpoints)
-  - [Testing API Endpoints](#testing-api-endpoints)
-- [Accessing The Django Admin Panel](#accessing-the-django-admin-panel)
+- [Backend](#back-end)
+  - [Setup Instructions](#backend-setup-instructions)
+  - [Running The Server](#running-the-server)
+  - [API Endpionts](#api-endpoints)
+    - [Testing API Endpoints](#testing-api-endpoints)
+  - [Accessing The Django Admin Panel](#accessing-the-django-admin-panel)
+-[Frontend](#front-end)
+  -[Setup Instructions](#front-setup-instructions)
 
 ## Tech Stack
 
@@ -23,7 +26,7 @@ Todo Application with Django
 * Database: SQlite </br>
 
 ## Backend
-### Setup Instructions
+### Backend Setup Instructions
 
 1. Clone the repository
    ```
@@ -117,20 +120,24 @@ Server runs at 127.0.0.1:8000 or localhost:8000
 
 ## Frontend
 
-### Setup Instructions
+### Frontend Setup Instructions
   1) Navigate to the frontend folder
+
     ```
     cd client
     ```
   2) Install dependencies (for npm)
+  
     ```
     npm install
     ```
   3) Run in dev mode (for testing)
+  
     ```
     npm run dev
     ```
   4) Build Project and Run Project
+  
     ```
     npm run build
     npm start

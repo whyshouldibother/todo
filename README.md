@@ -119,23 +119,23 @@ Server runs at 127.0.0.1:8000 or localhost:8000
   Login in with the superuser credentials
 
 ## Frontend
-
 ### Frontend Setup Instructions
-  1) Navigate to the frontend folder
-    ```
-    cd client
-    ```
-  2) Install dependencies (for npm)
-    ```
-    npm install
-    ```
-  3) Run in dev mode (for testing)
-    ```
-    npm run dev
-    ```
-  4) Build Project and Run Project
-    ```
-    npm run build
-    npm start
-    ```
+
+1. Navigate to the frontend folder
+  ```
+  cd client
+  ```
+2. Install dependencies (for npm)
+  ```
+  npm install
+  ```
+3. Run in dev mode (for testing)
+  ```
+  npm run dev
+  ```
+4. Build Project and Run Project
+  ```
+  npm run build
+  npm start
+  ```
   Server runs at http://localhost:3000 or http://127.0.0.1:3000
